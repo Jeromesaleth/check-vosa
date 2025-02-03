@@ -469,55 +469,53 @@
 </div>
 
 <!-- start form  -->
-<div class="achivement-form1 container-xxl py-5 d-flex align-items-center justify-content-around"
-    style="background-color: #CFFDE1; margin-top: 50px;">
-    <div class="achivement-img">
-        <img style="height: 100%; width: 70%; object-fit: cover; " src="./img/internship-frm.jpg" alt="">
-    </div>
+ <!-- Internship Form Section -->
+ <div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12">
+            <div class="internship-form">
+                <h2>Apply for Internship</h2>
+                <form action="submit.php" method="POST">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your name" required>
+                    </div>
 
-    <form id="achievementForm">
-        <div class="text-center mb-5">
-            <h6 class="section-title text-center text-primary px-3 animate__animated animate__fadeInUp ourAchievement"
-                style="background-color: #CFFDE1;">OUR ACHIEVEMENT & SUCCESS</h6>
-            <h1 class="display-6 animate__animated animate__fadeInDown ourAchievement">We’d love to hear from you!
-            </h1>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="department" class="form-label">Department</label>
+                        <select class="form-control" id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Graphic Design">Graphic Design</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Software Testing">Software Testing</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="resume" class="form-label">Upload Resume</label>
+                        <input type="file" class="form-control" id="resume" name="resume" required>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="mb-3">
-            <input type="text" class="form-control" id="appointment_name" placeholder="Name"
-                pattern="^[A-Za-z\s]+$" required title="Please enter letters only.">
-            <small id="nameError" class="text-danger"></small>
-        </div>
-        <div class="mb-3">
-            <input type="text" placeholder="Phone Number *" class="form-control" id="phoneNumber" pattern="^\d{10}$"
-                title="Phone number must be 10 digits" required>
-            <small id="phoneError" class="text-danger"></small>
-        </div>
-        <div class="mb-3">
-            <input type="email" placeholder="Email *" class="form-control" id="email"
-                pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please enter a valid email address" required>
-            <small id="emailError" class="text-danger"></small>
-        </div>
-        <div class="mb-3">
-            <select class="form-control" id="internshipCourse" required>
-                <option value="">Select Internship Course *</option>
-                <option value="Frontend Development">Frontend Development</option>
-                <option value="Backend Development">Backend Development</option>
-                <option value="Full Stack Development">Full Stack Development</option>
-                <option value="UI/UX Design">UI/UX Design</option>
-                <option value="Data Science">Data Science</option>
-            </select>
-            <small id="courseError" class="text-danger"></small>
-        </div>
-        <div class="mb-3">
-            <input type="text" placeholder="Message *" class="form-control" id="message" required>
-            <small id="messageError" class="text-danger"></small>
-        </div>
-        <div class="sendWhatsApp-btn">
-            <button type="button" class="gradient-primary btn btn-primary py-3"
-                style="margin-left: 420px; font-weight: bold; width: 133px;" id="sendWhatsApp">Send Request</button>
-        </div>
-    </form>
+    </div>
 </div>
+
 
 <style>
    
